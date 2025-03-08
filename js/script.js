@@ -12,3 +12,10 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// Klick searchicon menampilkan/menghilangkan box
+document.getElementById("search-icon").addEventListener("click", function (e) {
+  e.preventDefault(); // Mencegah reload halaman
+  const searchBox = document.getElementById("search-box");
+  searchBox.classList.toggle("hidden"); // Toggle kelas hidden untuk tampil/sembunyi
+});

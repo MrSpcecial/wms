@@ -34,10 +34,10 @@
 
       <form action="">
         <div class="navbar-extra">
-          <div class="searchbox">
-            <input type="text" placeholder="Search..." onkeyup="searchData()" />
+          <div id="search-box" class="searchbox hidden">
+            <input type="text" placeholder="Search..." id="search-input" />
           </div>
-          <a href="#" id="search"><i data-feather="search"></i></a>
+          <a href="#" id="search-icon"><i data-feather="search"></i></a>
           <a href="#" id="shopping-cart"
             ><i data-feather="shopping-cart"></i
           ></a>
@@ -55,7 +55,7 @@
           <h1>WN<span>S.</span></h1>
         </div>
         <p>
-          WNS, singkatan dari Watermelon Noodle & Smoothie, adalah produk unik
+          WNS singkatan dari Watermelon Noodle & Smoothie, adalah produk unik
           yang menggabungkan mie dan smoothie berbahan dasar 100% semangka.
           Rasanya manis dan segar secara alami, tanpa bahan tambahan buatan,
           menjadikannya pilihan sehat dan lezat untuk dinikmati.
@@ -90,23 +90,23 @@
     <!-- Menu Section Start -->
     <section id="menus" class="menus">
       <h2><span>Menu</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        exercitationem molestias distinctio quod doloribus voluptas.
-      </p>
+      <p>Silahkan Memilih Menu Yang Kami Sediakan Dibawah ini!!!</p>
 
-      <div class="row">
+      <div class="row-card">
         <div class="menu-card">
           <img src="img/logo.jpeg" alt="1" class="menu-card-img" />
-          <h3 class="menu-card-title">- Watermelon Noodle -</h3>
+          <h3 class="menu-card-title">
+            Watermelon <br />
+            Noodle
+          </h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
         <div class="menu-card">
           <img src="img/logo.jpeg" alt="2" class="menu-card-img" />
-          <h3 class="menu-card-title">- Watermelon Noodle -</h3>
+          <h3 class="menu-card-title">Smoothie Watermelon</h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
-        <div class="menu-card">
+        <!-- <div class="menu-card">
           <img src="img/logo.jpeg" alt="3" class="menu-card-img" />
           <h3 class="menu-card-title">- Watermelon Noodle -</h3>
           <p class="menu-card-price">IDR 15K</p>
@@ -115,7 +115,7 @@
           <img src="img/logo.jpeg" alt="4" class="menu-card-img" />
           <h3 class="menu-card-title">- Watermelon Noodle -</h3>
           <p class="menu-card-price">IDR 15K</p>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Menu Section End -->
