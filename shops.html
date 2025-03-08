@@ -23,14 +23,14 @@
   <body>
     <!-- Navbar Start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">WN<span>S.</span></a>
+      <a href="index.html" class="navbar-logo">WN<span>S.</span></a>
 
-      <div class="navbar-nav">
+      <!-- <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menus">Menu</a>
         <a href="#contact">Kontak</a>
-      </div>
+      </div> -->
 
       <form action="">
         <div class="navbar-extra">
@@ -53,31 +53,50 @@
       <p>Silahkan Memilih Menu Yang Kami Sediakan Dibawah ini!!!</p>
 
       <div class="row-card">
-        <div class="menu-card">
-          <img src="img/logo.jpeg" alt="1" class="menu-card-img" />
+        <div class="menu-card" id="item1">
+          <img
+            src="img/logo.jpeg"
+            alt="Watermelon Noodle"
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">
             Watermelon <br />
             Noodle
           </h3>
           <p class="menu-card-price">IDR 20K</p>
+
+          <!-- Quantity and total price section (hidden initially) -->
+          <div class="order-box" style="display: none">
+            <button class="minus-btn">-</button>
+            <input type="number" value="1" id="quantity1" min="1" />
+            <button class="plus-btn">+</button>
+            <p>Total: <span id="total1">20K</span></p>
+          </div>
         </div>
-        <div class="menu-card">
-          <img src="img/logo.jpeg" alt="2" class="menu-card-img" />
+
+        <div class="menu-card" id="item2">
+          <img
+            src="img/logo.jpeg"
+            alt="Smoothie Watermelon"
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Smoothie Watermelon</h3>
           <p class="menu-card-price">IDR 15K</p>
+
+          <!-- Quantity and total price section (hidden initially) -->
+          <div class="order-box" style="display: none">
+            <button class="minus-btn">-</button>
+            <input type="number" value="1" id="quantity2" min="1" />
+            <button class="plus-btn">+</button>
+            <p>Total: <span id="total2">15K</span></p>
+          </div>
         </div>
-        <!-- <div class="menu-card">
-          <img src="img/logo.jpeg" alt="3" class="menu-card-img" />
-          <h3 class="menu-card-title">- Watermelon Noodle -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/logo.jpeg" alt="4" class="menu-card-img" />
-          <h3 class="menu-card-title">- Watermelon Noodle -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div> -->
       </div>
+
+      <!-- Pay button -->
+      <button id="pay-btn" style="display: none">Bayar</button>
     </section>
+
     <!-- Menu Section End -->
 
     <!-- Footer Start -->

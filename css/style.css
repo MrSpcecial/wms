@@ -247,6 +247,10 @@ body {
 
 /* Menu Section */
 
+#menus {
+  padding-top: 150px; /* Adjust the value as needed */
+}
+
 .menus {
   text-align: center;
   padding: 3rem 1rem;
@@ -424,6 +428,60 @@ footer .credit {
 footer .credit a {
   color: var(--bg);
   font-weight: 700;
+}
+
+/* Shops.html */
+
+.order-box input[type="number"] {
+  width: 50px; /* Set a smaller width */
+  text-align: center; /* Center the number */
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* To remove arrows (spinners) in the number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.order-box button {
+  background-color: #ff4500;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-box button:hover {
+  background-color: #ff7043; /* Lighter shade on hover */
+}
+
+#pay-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#pay-btn:hover {
+  background-color: #ff7043; /* Lighter shade on hover */
 }
 
 /* Media Queries */
