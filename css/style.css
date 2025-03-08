@@ -245,6 +245,13 @@ body {
   line-height: 1.6;
 }
 
+.about p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
 /* Menu Section */
 
 #menus {
@@ -263,6 +270,9 @@ body {
 
 .menus p {
   font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-weight: bold;
   margin-bottom: 2rem;
 }
 
@@ -314,7 +324,7 @@ body {
   text-align: center;
   max-width: 30rem;
   margin: auto;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.6;
 }
 
@@ -393,7 +403,7 @@ body {
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 1rem;
   margin-top: 3rem;
 }
 
@@ -484,6 +494,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 #pay-btn:hover {
