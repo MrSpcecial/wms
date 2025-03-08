@@ -68,9 +68,8 @@
           <!-- Quantity and total price section (hidden initially) -->
           <div class="order-box" style="display: none">
             <button class="minus-btn">-</button>
-            <input type="number" value="1" id="quantity1" min="1" />
+            <input type="number" value="0" id="quantity1" min="0" />
             <button class="plus-btn">+</button>
-            <p>Total: <span id="total1">20K</span></p>
           </div>
         </div>
 
@@ -86,15 +85,19 @@
           <!-- Quantity and total price section (hidden initially) -->
           <div class="order-box" style="display: none">
             <button class="minus-btn">-</button>
-            <input type="number" value="1" id="quantity2" min="1" />
+            <input type="number" value="0" id="quantity1" min="0" />
             <button class="plus-btn">+</button>
-            <p>Total: <span id="total2">15K</span></p>
           </div>
         </div>
       </div>
 
-      <!-- Pay button -->
-      <button id="pay-btn" style="display: none">Bayar</button>
+      <p class="total-text" id="total-pay">
+        Total: IDR <span id="final-total">0</span>
+      </p>
+      <!-- Total above pay button -->
+      <div class="bayar">
+        <button id="pay-btn" style="display: none">Bayar</button>
+      </div>
     </section>
 
     <!-- Menu Section End -->
